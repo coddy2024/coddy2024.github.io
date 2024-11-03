@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Catacombs';
+	src:url('font/Catacombs V1-0.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+span {
+	background-color: #629584;
+	font-weight: bolder;
+	box-shadow:  0 0 25px 5px  rgba(0,0,0, 0.4);
+}
+
+div {
+	font-family: 'Catacombs';
+	font-size: 34px;
+	margin: 0 60px;
+	background-color: #E2F1E7;
+	padding: 52px;
+	box-shadow:  0 0 25px 5px  rgba(0,0,0, 0.4);
+}
+
+p {
+	font-size: 35px;
+	font-family: "Bad Script", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: #243642;
+  	text-align: justify;
+	}
+h1 {
+	color: #387478;
+	font-family: "Rubik Bubbles", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 40px;
+  	text-align: center;
+}
+
+li {
+	margin:  0 65px;
+}
+
+img {
+	width: 100%;
+}
+a {
+	text-decoration: wavy underline overline;
+	color: #387478;
+	font-weight: bolder;
+	font-size: 24px;
+	display: block;
+	margin: 20px 0;
+	transition:  0.5s ease-in;
+}
+a:hover {
+	text-decoration: #243642 wavy underline;
+}
+body {
+	background-color: #387478;
+	font-size: 20px;
+	font-family: 'Catacombs';
+	color: #243642;
+
+}
