@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Анимация</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: example;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes example {
+			0% {background-color: red;}
+			12% {background-color: blue;}
+			25% {background-color: yellow;}
+			50% {background-color: black;}
+			62% {background-color: orange;}
+			75% {background-color: seagreen;}
+			88% {background-color: grey;}
+			100% {background-color: pink;}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
