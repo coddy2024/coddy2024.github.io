@@ -17,7 +17,7 @@ body {
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px 1px rgba(30, 144, 255, 0.3);
 	flex-wrap: wrap;
 }
 .item {
@@ -47,7 +47,89 @@ body {
 }
 .img_link:hover{
 	opacity: 1;
-	transform: scale(1.2);
+	transform: scale(1.2) rotate(5deg);
 	z-index: 3;
 	box-shadow: 0 0 200px 30px rgba(30, 144, 255, 0.6);
+}
+
+.polling_message {
+  color: black;
+  text-align: center;
+}
+
+.view_port {
+  background-color: dodgerblue;
+  height: 45px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(30, 144, 255, 0.9) 25%,
+    rgba(30, 144, 255, 0.1) 50%,
+    rgba(30, 144, 255, 0.9) 75%
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    rgba(30, 144, 255, 0.9) 25%,
+    rgba(30, 144, 255, 0.1) 50%,
+    rgba(30, 144, 255, 0.9) 75%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(30, 144, 255, 0.9) 25%,
+    rgba(30, 144, 255, 0.1) 50%,
+    rgba(30, 144, 255, 0.9) 75%
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(30, 144, 255, 0.9) 25%,
+    rgba(30, 144, 255, 0.1) 50%,
+    rgba(30, 144, 255, 0.9) 75%
+  );
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+  -moz-animation: 4s linear 0s infinite alternate move_eye;
+  -o-animation: 4s linear 0s infinite alternate move_eye;
+  animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@-moz-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@-o-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
